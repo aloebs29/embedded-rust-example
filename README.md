@@ -6,7 +6,9 @@ This project is based off of the Cortex-M Quickstart template found [here](https
 
 The example project is built and run within a docker container based on the [official rust image](https://hub.docker.com/_/rust). It uses QEMU to run the application in an emulated environment. Ideally, this project would run on an emulated Cortex-M4F core, however, QEMU does not support this ([see here](https://wiki.qemu.org/Documentation/Platforms/ARM)), so it runs on an emulated Ti LM3S6965 (Cortex-M3).
 
-The docker entrypoint prints the ELF headers, linker section sizes, and then runs a hello world application that uses semihosting to print to the terminal.
+The docker entrypoint prints the ELF headers, linker section sizes, and then runs a hello world application.
+
+The hello world application executes a simple swap function and prints the result to the terminal (with semihosting).
 
 ## Dependencies
 
